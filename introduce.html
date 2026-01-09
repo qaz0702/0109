@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的自我介紹</title>
+  <!-- Bootstrap CSS -->
+  <link rel="icon" href="picture/icon.jpeg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #6c63ff, #00bcd4);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 250px;
+      border-radius: 100%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img
+      src="https://lh3.googleusercontent.com/sitesv/AAzXCkdjIhOzRRF-ieq4l5QMLnX2TbexOaYsYHU9_tnL076y6Mew2nPD8_rbo5lOhfd2R9oAcBDjAq2z1_rJCUz3LL0Im8EhmmI16H9T47KY7mlm1WHBuYvjOOAE9UGfbrksB6ra3YU7wFgNSMuaWzwfY--Fo1GLSF1tIgGTUe5EpadhIozX89l-ElmMgdOeK2M1RUb1rh-NJ4o0q5c=w1280"
+      alt="我的照片" class="profile-img">
+    <h1>林佳駿</h1>
+    <p class="lead">工程師｜喜歡音樂與電腦工程</p>
+    <a href="#about" class="btn btn-light btn-lg mt-3">了解更多</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <h2 class="mb-4">關於我</h2>
+    <p>
+      我熱愛網頁設計與開發，熟悉 HTML、CSS、JavaScript，並且喜歡用 Bootstrap 來快速完成響應式排版。
+      我的興趣是創造美觀又好用的網站，讓使用者有愉快的體驗。
+    </p>
+  </section>
+
+
+<div id="myCarousel" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+  <!-- 幻燈片指示器 -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- 幻燈片內容 -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="picture/si.JPG" class="d-block w-100 " alt="第一張">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>高中社團表演</h5>
+        <p>擔任社長在台上演唱嘻哈歌曲。</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/800x400?text=第二張圖片" class="d-block w-100" alt="第二張">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>第二張幻燈片</h5>
+        <p>這是第二張的描述文字。</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/800x400?text=第三張圖片" class="d-block w-100" alt="第三張">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>第三張幻燈片</h5>
+        <p>這是第三張的描述文字。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 左右控制箭頭 -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="container py-5">
+    <h2 class="mb-4">技能</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">HTML & CSS</h5>
+            <p class="card-text">熟悉語意化標籤與排版技巧</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">能製作互動效果與功能</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">快速建立響應式版面</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5">
+    <h2 class="mb-4">聯絡我</h2>
+    <p>Email: example@mail.com</p>
+    <p>GitHub: <a href="#">github.com/username</a></p>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
